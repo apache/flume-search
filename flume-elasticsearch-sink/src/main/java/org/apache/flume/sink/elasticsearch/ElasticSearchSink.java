@@ -354,7 +354,7 @@ public class ElasticSearchSink extends AbstractSink implements Configurable, Bat
   public void start() {
     ElasticSearchClientFactory clientFactory = new ElasticSearchClientFactory();
 
-    logger.info("ElasticSearch sink {} started");
+    logger.info("ElasticSearch sink {} started", getName());
     sinkCounter.start();
     try {
       if (isLocal) {
@@ -380,7 +380,7 @@ public class ElasticSearchSink extends AbstractSink implements Configurable, Bat
 
   @Override
   public void stop() {
-    logger.info("ElasticSearch sink {} stopping");
+    logger.info("ElasticSearch sink {} stopping", getName());
     if (client != null) {
       client.close();
     }
