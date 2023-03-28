@@ -40,7 +40,7 @@ limitations under the License.
     <sourceJavaVersion>1.8</sourceJavaVersion>
     <targetJavaVersion>1.8</targetJavaVersion>
 
-    <elasticsearch.version>0.90.1</elasticsearch.version>
+    <elasticsearch.version>6.8.17</elasticsearch.version>
     <flume.version>1.11.1-SNAPSHOT</flume.version>
   </properties>
 
