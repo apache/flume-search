@@ -29,7 +29,6 @@ import java.util.Locale;
 import java.util.Map;
 import java.util.TimeZone;
 
-import static org.apache.flume.sink.elasticsearch.TimeBasedIndexNameBuilder.DEFAULT_TIME_ZONE;
 import static org.junit.Assert.assertEquals;
 
 public class TimeBasedIndexNameBuilderTest {
