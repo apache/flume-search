@@ -42,7 +42,7 @@ public class TimeBasedIndexNameBuilder implements
   public static final String DEFAULT_TIME_ZONE = "Etc/UTC";
 
   private FastDateFormat fastDateFormat = FastDateFormat.getInstance("yyyy-MM-dd",
-      TimeZone.getTimeZone("Etc/UTC"));
+      TimeZone.getTimeZone(DEFAULT_TIME_ZONE));
 
   private String indexPrefix;
 

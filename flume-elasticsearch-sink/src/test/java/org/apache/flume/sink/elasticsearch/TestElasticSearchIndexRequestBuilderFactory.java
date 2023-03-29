@@ -32,7 +32,9 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.io.IOException;
+import java.util.Locale;
 import java.util.Map;
+import java.util.TimeZone;
 
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
@@ -63,7 +65,10 @@ public class TestElasticSearchIndexRequestBuilderFactory
   @Test
   public void shouldUseUtcAsBasisForDateFormat() {
     assertEquals("Coordinated Universal Time",
-        factory.fastDateFormat.getTimeZone().getDisplayName());
+        factory.fastDateFormat.getTimeZone().getDisplayName(
+                false,
+                TimeZone.LONG,
+                Locale.ENGLISH));
   }
 
   @Test
